@@ -408,5 +408,5 @@ ASALocalRun/
 *.user
 _ReSharper.*
 bin
-obj
+api\obj
 packages
