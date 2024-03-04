@@ -10,24 +10,3 @@ CREATE TABLE Products (
     Price DECIMAL(10, 2)
 );
 GO
-
-CREATE TABLE Categories (
-    CategoryId INT PRIMARY KEY,
-    CategoryName VARCHAR(255)
-);
-GO
-
-ALTER TABLE Products
-ADD category_id INT;
-
-ALTER TABLE Products
-ADD CONSTRAINT FK_Products_Categories FOREIGN KEY (category_id) REFERENCES Categories(CategoryId);
-GO
-
-CREATE TABLE ProductRatings (
-    RatingId INT PRIMARY KEY,
-    ProductId INT,
-    Rating INT,
-    FOREIGN KEY (ProductId) REFERENCES Products(Id)
-);
-GO
