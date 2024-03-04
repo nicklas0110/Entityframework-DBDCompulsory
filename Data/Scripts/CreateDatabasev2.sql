@@ -1,6 +1,6 @@
 CREATE TABLE Categories (
-                            CategoryId INT PRIMARY KEY,
-                            CategoryName VARCHAR(255)
+    CategoryId INT PRIMARY KEY,
+    CategoryName VARCHAR(255)
 );
 GO
 
