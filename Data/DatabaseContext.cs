@@ -24,6 +24,9 @@ namespace Data
                 .Property(p => p.ProductId)
                 .ValueGeneratedOnAdd();
             
+            modelBuilder.Entity<Category>()
+                .Property(p => p.CategoryId)
+                .ValueGeneratedOnAdd();
         }
     }
 }
