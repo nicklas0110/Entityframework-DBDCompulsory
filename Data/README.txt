@@ -1,4 +1,6 @@
-# Rollback Plan for Database Migrations
+# Rollback Plan and documentation for Database Migrations
+
+# Switch branches to find either the manual or ef migrations
 
 ## Overview
 This document include:
