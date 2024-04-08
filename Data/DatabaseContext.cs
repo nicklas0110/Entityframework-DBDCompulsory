@@ -27,6 +27,10 @@ namespace Data
             modelBuilder.Entity<Category>()
                 .Property(p => p.CategoryId)
                 .ValueGeneratedOnAdd();
+            
+            modelBuilder.Entity<ProductRating>()
+                .Property(p => p.ProductRatingId)
+                .ValueGeneratedOnAdd();
         }
     }
 }
